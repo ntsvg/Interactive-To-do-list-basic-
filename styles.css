@@ -1,0 +1,122 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0; 
+  padding: 0;
+  background-color: #f5f5e6;
+;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 20px 0;
+}
+
+.category {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: auto;
+}
+
+.category:hover {
+  background: #007bff;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Category Controls */
+.category-controls {
+  margin: 20px;
+}
+
+.category-controls input {
+  padding: 5px;
+  margin: 5px;
+}
+
+.category-controls button {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Tasks */
+.tasks-container {
+  margin: 20px auto;
+  max-width: 600px;
+  min-height: 150px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.task-item {
+  margin: 10px 0;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 8px;
+
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Task Controls */
+.task-controls {
+  margin: 20px;
+}
+
+.task-controls input {
+  padding: 5px;
+  margin: 5px;
+}
+
+.task-controls button {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Stats Section */
+.stats {
+  margin: 20px auto;
+  font-size: 1.2em;
+}
+
+/* Celebration Notification */
+.celebration {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  z-index: 1000;
+  display: none;
+}
